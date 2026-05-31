@@ -90,8 +90,8 @@ with tab2:
                     col1, col2, col3 , col4 = st.columns(4)
                     col1.metric("Total Listings", data["total_listings"])
                     col2.metric("Avg Price", f"{data['avg_price']:,.0f} EGP")
-                    col3.metric("Avg Price/mÂ²", f"{data['avg_price_per_m2']:,.0f} EGP")
-                    col4.metric("Avg Area", f"{data['avg_area_m2']} mÂ²")
+                    col3.metric("Avg Price/m²", f"{data['avg_price_per_m2']:,.0f} EGP")
+                    col4.metric("Avg Area", f"{data['avg_area_m2']} m²")
 
                     st.markdown("---")
                     col1, col2 = st.columns(2)
