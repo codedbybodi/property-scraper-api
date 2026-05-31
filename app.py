@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL  = "http://localhost:8001"
+API_URL  = "https://property-scraper-api-production-2e19.up.railway.app"
 
 st.set_page_config(page_title="🏠 PropIQ - Egyption Property Market", layout="wide")
 st.title("🏠 PropIQ - Egyption Property Market Analyzer")
