@@ -4,7 +4,7 @@ import pandas as pd
 
 API_URL  = "https://property-scraper-api-production-2e19.up.railway.app"
 
-st.set_page_config(page_title="🏠 PropIQ - Egyption Property Market", layout="wide")
+st.set_page_config(page_title="🏠 PropIQ - Egyptian Property Market", layout="wide")
 st.title("🏠 PropIQ - Egyption Property Market Analyzer")
 st.markdown("Real-time property data and AI-prowed market insights for Egypt")
 
@@ -54,7 +54,7 @@ with tab1:
                         <h4 style='color:#111827;'>🏘️ {prop['title']} </h4>
                         <p style='color:#111827;'>💰 <b>{price_text}</b> </p>
                         <p style='color:#111827;'>📍 {prop['location']} </p>
-                        <p style='color:#111827;'>🛏️ {beds_text} beds  Â· 🏠 {area_text} mÂ²</p>
+                        <p style='color:#111827;'>🛏️ {beds_text} beds  Â· 🏠 {area_text} m²</p>
                         <p style='color:#111827;'>🏷️ {prop.get('property_type', 'N/A')} </p>
                     </div>
                     """, unsafe_allow_html=True)
@@ -67,7 +67,7 @@ with tab1:
 with tab2:
     st.subheader("📊 Market Statistics") 
 
-    analysis_location = st.text_input("Analyze Location", placeholder="e.g. New Cairo, or leave empty for all Egypt")
+    analysis_location = st.text_input("Analyze Location", placeholder="e.g. Cairo, or leave empty for all Egypt")
     analyze_btn = st.button("📊 Run Analysis")
 
     if analyze_btn:
@@ -117,7 +117,7 @@ with tab3:
     st.subheader("🤖 AI Market Insights")
     st.markdown("Powered by Google Gemini - Analysis based or real property data")
 
-    ai_location = st.text_input("Location for AI analysis", placeholder="e.g. New Cairo")
+    ai_location = st.text_input("Location for AI analysis", placeholder="e.g. Cairo")
     ai_btn = st.button("🤖 Generate AI Insights")
 
     if ai_btn:
@@ -145,4 +145,4 @@ with tab3:
 
 # Footer 
 st.markdown("---")
-st.markdown("Built with FastAPI + PostgreSQL + Google Gemini AI | PropIQ 🏠 ")
+st.markdown("Built with FastAPI + PostgreSQL + Google Gemini AI | PropIQ 🏠")
