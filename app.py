@@ -5,7 +5,7 @@ import pandas as pd
 API_URL  = "https://property-scraper-api-production-2e19.up.railway.app"
 
 st.set_page_config(page_title="🏠 PropIQ - Egyptian Property Market", layout="wide")
-st.title("🏠 PropIQ - Egyption Property Market Analyzer")
+st.title("🏠 PropIQ - Egyptian Property Market Analyzer")
 st.markdown("Real-time property data and AI-prowed market insights for Egypt")
 
 # Sidebar filters
